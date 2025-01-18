@@ -76,7 +76,7 @@ namespace Trash581
         {
             var panel = PanelHelper.Create(Format.Color($"Jeter - {item.itemName}", Format.Colors.Info), UIPanel.PanelType.Input, player, () => Trash(player, item, quantity));
             panel.TextLines.Add($"<b>Quantité à jeter.</b>");
-            panel.SetInputPlaceholder("Combien d'ovjet voulez vous jeter...");
+            panel.SetInputPlaceholder("Combien d'objet voulez vous jeter...");
             panel.CloseButton();
             panel.PreviousButton();
             panel.AddButton(Format.Color("Confirmer", Format.Colors.Success), ui =>
